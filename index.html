@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven - Artisanal Coffee Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3a1f5d;
+            --secondary-color: #c7a951;
+            --accent-color: #e74c3c;
+            --background-color: #f4f1e8;
+            --text-color: #2c3e50;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-logo {
+            height: 40px;
+            margin-right: 10px;
+        }
+        nav h1 {
+            font-size: 1.8rem;
+            margin: 0;
+            margin-right: auto;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            color: var(--secondary-color);
+            background-color: rgba(255,255,255,0.1);
+        }
+        #hero {
+            background: linear-gradient(rgba(58, 31, 93, 0.7), rgba(58, 31, 93, 0.7)), url('images/backdrop.jpg') no-repeat center center/cover;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #ffffff;
+        }
+        #hero .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            font-family: 'Lora', serif;
+        }
+        #hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        #hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--accent-color);
+            color: #ffffff;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .btn:hover {
+            background: #c0392b;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+        }
+        #features {
+            padding: 6rem 0;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+        .feature {
+            background: #ffffff;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        .feature img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 2rem;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--secondary-color);
+        }
+        .feature h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        #about {
+            background: var(--primary-color);
+            color: #ffffff;
+            padding: 6rem 0;
+        }
+        #about .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        #about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--secondary-color);
+        }
+        #about p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        #about img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        #about img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: var(--text-color);
+            color: #ffffff;
+            text-align: center;
+            padding: 2rem 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <img src="images/Logo.png" alt="Brew Haven Logo" class="nav-logo">
+                <h1>Brew Haven</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <div class="content">
+                <h1>Welcome to Brew Haven</h1>
+                <p>Experience the art of coffee in every sip</p>
+                <a href="menu.html" class="btn">Explore Our Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature">
+                    <img src="images/1.jpg" alt="Coffee Bean Icon">
+                    <h2>Artisanal Roasts</h2>
+                    <p>Our expert roasters craft unique blends from ethically sourced beans, ensuring a perfect cup every time.</p>
+                </div>
+                <div class="feature">
+                    <img src="images/2.jpg" alt="Barista Icon">
+                    <h2>Skilled Baristas</h2>
+                    <p>Our passionate team of baristas are trained to bring out the best flavors in every brew they create.</p>
+                </div>
+                <div class="feature">
+                    <img src="images/3.jpg" alt="Ambiance Icon">
+                    <h2>Cozy Atmosphere</h2>
+                    <p>Enjoy your coffee in our warm, inviting spaces designed for comfort and conversation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div>
+                <h2>Our Story</h2>
+                <p>Brew Haven was born from a passion for exceptional coffee and a desire to create a welcoming space for coffee lovers. Since 2015, we've been serving up carefully crafted brews and fostering a community centered around the love of coffee.</p>
+                <p>Our commitment to quality extends from bean to cup, with a focus on sustainable sourcing and innovative brewing techniques. Whether you're a coffee connoisseur or just beginning your coffee journey, Brew Haven is your perfect destination.</p>
+            </div>
+            <img src="images/4.jpg" alt="Brew Haven Interior">
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Brew Haven. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

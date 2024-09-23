@@ -1,0 +1,50 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Brew Haven - Artisanal Coffee Experience</title> <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lora:ital@0;1&display=swap" rel="stylesheet"> <style> :root { --primary-color: #3a1f5d; --secondary-color: #c7a951; --accent-color: #e74c3c; --background-color: #f4f1e8; --text-color: #2c3e50; } body { font-family: 'Montserrat', sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: var(--background-color); color: var(--text-color); } .container { width: 90%; max-width: 1200px; margin: 0 auto; } header { background-color: var(--primary-color); color: #ffffff; padding: 1rem 0; } nav { display: flex; flex-direction: column; align-items: center; } nav h1 { margin-bottom: 1rem; } nav ul { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; margin: 0; padding: 0; } nav ul li { margin: 0.5rem; } nav a { color: #ffffff; text-decoration: none; font-weight: 600; transition: color 0.3s ease; } nav a:hover { color: var(--secondary-color); } #hero { background: linear-gradient(rgba(58, 31, 93, 0.7), rgba(58, 31, 93, 0.7)), url('https://via.placeholder.com/1200x600') no-repeat center center/cover; min-height: 80vh; display: flex; align-items: center; text-align: center; color: #ffffff; } #hero .content { max-width: 800px; margin: 0 auto; padding: 1rem; } h1, h2 { font-family: 'Lora', serif; } #hero h1 { font-size: 2.5rem; margin-bottom: 1rem; } .btn { display: inline-block; background: var(--accent-color); color: #ffffff; padding: 0.8rem 1.5rem; border: none; border-radius: 5px; text-decoration: none; font-weight: 600; transition: background 0.3s ease; } .btn:hover { background: #c0392b; } #features { padding: 4rem 0; } .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; } .feature { background: #ffffff; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s ease; } .feature:hover { transform: translateY(-5px); } .feature img { width: 80px; height: 80px; margin-bottom: 1rem; } #about { background: var(--primary-color); color: #ffffff; padding: 4rem 0; } #about .container { display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: center; } #about img { width: 100%; max-width: 400px; height: auto; border-radius: 10px; margin: 0 auto; } footer { background: var(--text-color); color: #ffffff; text-align: center; padding: 1rem 0; } @media (min-width: 768px) { nav { flex-direction: row; justify-content: space-between; } nav h1 { margin-bottom: 0; } nav ul li { margin-left: 1.5rem; margin-right: 0; } #hero h1 { font-size: 3.5rem; } #about .container { grid-template-columns: 1fr 1fr; } } </style> </head> <body> <header> <div class="container"> <nav> <h1>Brew Haven</h1> <ul> <li><a href="index.html">Home</a></li> <li><a href="menu.html">Menu</a></li> <li><a href="locations.html">Locations</a></li> <li><a href="contact.html">Contact</a></li> </ul> </nav> </div> </header>
+text
+<section id="hero">
+    <div class="container">
+        <div class="content">
+            <h1>Welcome to Brew Haven</h1>
+            <p>Experience the art of coffee in every sip</p>
+            <a href="menu.html" class="btn">Explore Our Menu</a>
+        </div>
+    </div>
+</section>
+
+<section id="features">
+    <div class="container">
+        <div class="features-grid">
+            <div class="feature">
+                <img src="https://via.placeholder.com/80" alt="Coffee Bean Icon">
+                <h2>Artisanal Roasts</h2>
+                <p>Our expert roasters craft unique blends from ethically sourced beans, ensuring a perfect cup every time.</p>
+            </div>
+            <div class="feature">
+                <img src="https://via.placeholder.com/80" alt="Barista Icon">
+                <h2>Skilled Baristas</h2>
+                <p>Our passionate team of baristas are trained to bring out the best flavors in every brew they create.</p>
+            </div>
+            <div class="feature">
+                <img src="https://via.placeholder.com/80" alt="Ambiance Icon">
+                <h2>Cozy Atmosphere</h2>
+                <p>Enjoy your coffee in our warm, inviting spaces designed for comfort and conversation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <div>
+            <h2>Our Story</h2>
+            <p>Brew Haven was born from a passion for exceptional coffee and a desire to create a welcoming space for coffee lovers. Since 2015, we've been serving up carefully crafted brews and fostering a community centered around the love of coffee.</p>
+            <p>Our commitment to quality extends from bean to cup, with a focus on sustainable sourcing and innovative brewing techniques. Whether you're a coffee connoisseur or just beginning your coffee journey, Brew Haven is your perfect destination.</p>
+        </div>
+        <img src="https://via.placeholder.com/400x300" alt="Brew Haven Interior">
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Brew Haven. All rights reserved.</p>
+    </div>
+</footer>
